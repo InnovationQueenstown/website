@@ -21,6 +21,7 @@ reports/*
 .settings
 .idea
 .DS_Store
+/mysite/_config.php
 
 install.php
 favicon.ico
