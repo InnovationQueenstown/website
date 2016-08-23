@@ -1,2 +1,0 @@
-# website
-Innovation Queenstown website
