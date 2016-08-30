@@ -33,7 +33,6 @@ Change it, enhance it and most importantly enjoy it!
 <div class="main" role="main">
 	<div class="inner typography line">
 		$Layout
-		<iframe src="mysite/code/mailchimpform.html" width ="100%" height = "450px"></iframe>
 	</div>
 </div>
 <% include Footer %>
