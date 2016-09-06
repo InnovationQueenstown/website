@@ -46,10 +46,23 @@ class Homepage_Controller extends Page_Controller {
 			));
 
 		$total_count = $response->meta->total_count;
-
+		
+		$res = new DataObject;
+		//$res -> name = "";
+		//$res -> time = "";
+		
+		$sendback = new ArrayList();
 		foreach ($response->results as $event) {
-		    echo $event->name . ' at ' . date('Y-m-d H:i', $event->time / 1000) . PHP_EOL;
+			$res->name = $event->name;
+			$res->time = date('l - F j \a\t g:i a', $event->time / 1000) . PHP_EOL;
+			$sendback->push($res);
+		    //echo $event->name . ' at ' . date('Y-m-d H:i', $event->time / 1000) . PHP_EOL;
 		}
+		
+		//echo '<pre>';
+		//print_r($res);
+		
+		return $sendback;
 	}
 
 }
