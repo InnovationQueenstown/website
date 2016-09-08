@@ -47,12 +47,12 @@ class Homepage_Controller extends Page_Controller {
 
 		$total_count = $response->meta->total_count;
 		
-		$res = new DataObject;
 		//$res -> name = "";
 		//$res -> time = "";
 		
 		$sendback = new ArrayList();
 		foreach ($response->results as $event) {
+			$res = new DataObject;
 			$res->name = $event->name;
 			$res->time = date('l - F j \a\t g:i a', $event->time / 1000) . PHP_EOL;
 			$sendback->push($res);
