@@ -1,6 +1,7 @@
-<div class="main" role="main">
-	<div class="inner typography line">
-		$Layout
+<div class="content-container unit size3of4 lastUnit">
+	<article>
+		<h1>$Title</h1>
+		<div class="content">$Content</div>
 		<table width = "100%">
 			<tr>
 				<th>Event</th>
@@ -12,7 +13,8 @@
 					<td>$time</td>
 				</tr>
 			<% end_loop %>
-		</table>
-		<iframe src="mysite/code/mailchimpform.html" height="600" width="100%"></iframe>
-	</div>
+		</table>ailchimpform.html
+		<% include Mailchimp %>
+	</article>
 </div>
+	
