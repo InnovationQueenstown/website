@@ -45,22 +45,29 @@ class Homepage_Controller extends Page_Controller {
 			'group_urlname' => 'Queenstown-Technology-Group'
 			));
 
+		$tango = $meetup->getEvents(array(
+			'group_urlname' => 'Queenstown-Argentine-Tango-Dancing-Meetup'
+			));
+
 		$total_count = $response->meta->total_count;
 		
 		//$res -> name = "";
 		//$res -> time = "";
 		
 		$sendback = new ArrayList();
+
 		foreach ($response->results as $event) {
 			$res = new DataObject;
 			$res->name = $event->name;
 			$res->time = date('l - F j \a\t g:i a', $event->time / 1000) . PHP_EOL;
+			$res->rsvp = $event->yes_rsvp_count;
+			$res->link = '<a href="'.$event->event_url.'">Go to Meetup</a>';
 			$sendback->push($res);
 		    //echo $event->name . ' at ' . date('Y-m-d H:i', $event->time / 1000) . PHP_EOL;
 		}
 		
 		//echo '<pre>';
-		//print_r($res);
+		//print_r($response);
 		
 		return $sendback;
 	}
