@@ -138,8 +138,6 @@ body {
 
 /* HEADER */
 .header {
-    background-image: URL("iq_banner.png");
-	background-repeat: no-repeat;
 	background-color: #000;
 	background-position: center;
 }
@@ -161,6 +159,7 @@ body {
 		    font-size: 48px;
 		    font-family: "HelveticaNeueLTPro-Bd", "Helvetica Neue LT Pro Bold", "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "Helvetica Neue LT Pro", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		    color: #fff;
+			text-shadow: 0 0 5px black;
 		    font-weight: 600;
 		    font-stretch: normal; /* default value. No font stretching */
 		    line-height: 1em;
