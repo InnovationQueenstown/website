@@ -17,8 +17,8 @@
 					<td>$link</td>
 				</tr>
 			<% end_loop %>
-		</table>ailchimpform.html
-		<% include Mailchimp %>
+		</table>
+		<iframe src="mysite/code/mailchimpform.html" height="600" width="100%"></iframe>
 	</article>
 </div>
 	

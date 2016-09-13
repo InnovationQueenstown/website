@@ -100,7 +100,11 @@ The following fractions are supported: 1, 1/2, 1/3, 2/3, 1/4, 3/4, 1/5, 2/5, 3/5
 }
 
 /* MAIN LAYOUT */
+
+
+
 body {
+	
     margin: 0;
     background: #ededed;
     min-width: 240px; 
@@ -240,7 +244,7 @@ body {
 	.header .primary li a {
 	    color: #888;
 	    font-size: 15px;
-	    font-family: Helvetica, Arial, sans-serif;
+	    font-family: "Rubik", "Open Sans", Helvetica, Arial, sans-serif;
 	    padding: 6px 8px;
 	    font-weight: bold;
 	    display: block;
