@@ -59,7 +59,7 @@ class Homepage_Controller extends Page_Controller {
 		foreach ($response->results as $event) {
 			$res = new DataObject;
 			$res->name = $event->name;
-			$res->time = date('l - F j \a\t g:i a', $event->time / 1000) . PHP_EOL;
+			$res->time = $event->time;
 			$res->rsvp = $event->yes_rsvp_count;
 			$res->link = '<a href="'.$event->event_url.'">Go to Meetup</a>';
 			$sendback->push($res);
