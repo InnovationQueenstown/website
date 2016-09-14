@@ -26,7 +26,7 @@ class Homepage_Controller extends Page_Controller {
 	 * @var array
 	 */
 	private static $allowed_actions = array (
-		'getMeetupData'
+		'getMeetupData', 'get_timezone_offset',
 	);
 
 	public function init() {
@@ -49,28 +49,43 @@ class Homepage_Controller extends Page_Controller {
 			'group_urlname' => 'Queenstown-Argentine-Tango-Dancing-Meetup'
 			));
 
-		$total_count = $response->meta->total_count;
-		
-		//$res -> name = "";
-		//$res -> time = "";
-		
+			
+		//Set local time zone
+		$dateTimeZoneNZ = new DateTimeZone("Pacific/Auckland");
+						
 		$sendback = new ArrayList();
 
+		//Process each event that is present in group from API call
 		foreach ($response->results as $event) {
+			//Remove milliseconds from Meetup Epoch time return
+			$epochTime = $event->time / 1000;
+			date_default_timezone_set('UTC');
+			//Format into standard date time format
+			$meetupTime = date('Y-m-d H:i:s', $epochTime);
+			//Determine current time zone offset (in seconds) to UTC, which is what Meetup date time is set to, from NZ local time on the date of the event
+			$offset = $dateTimeZoneNZ->getOffset(new DateTime($meetupTime, $dateTimeZoneNZ));
+			//Convert the event date and time to DateTime object and then add the offset as an interval (seconds)
+			$meetupTime = new DateTime($meetupTime);
+			$meetupTime->add(new DateInterval('PT' . $offset . 'S'));
+			//format for display on front end
+			$stamp = $meetupTime->format('d-m-Y H:i');
+
+			//Create the dataobject from the processed event data and add it to the ArrayList which will be returned after all events are processed.
 			$res = new DataObject;
 			$res->name = $event->name;
-			$res->time = $event->time;
+			$res->time = $stamp;
 			$res->rsvp = $event->yes_rsvp_count;
 			$res->link = '<a href="'.$event->event_url.'">Go to Meetup</a>';
 			$sendback->push($res);
-		    //echo $event->name . ' at ' . date('Y-m-d H:i', $event->time / 1000) . PHP_EOL;
+		 
 		}
 		
 		//echo '<pre>';
-		//print_r($response);
+		//print_r($meetupTimeDeb);
 		
 		return $sendback;
 	}
 
+	
 }
 	
