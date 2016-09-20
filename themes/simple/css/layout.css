@@ -75,7 +75,7 @@ div.AboutItem:hover {
 
 .AboutItem img {
 	width: 250px;
-
+	height: 250px;
 	border: none;
 }
 
@@ -97,6 +97,7 @@ div.MUOuter:hover {
 	display: inline;
 	color: #08a;
 	float: left;
+	clear: left;
 }
 
 .MUOuter p {
@@ -114,6 +115,7 @@ div.MUClear {
 
 .MUOuter .MUTime {
 	font-size: 18px;
+	float: right;
 }
 
 .MUOuter .MULoc {
@@ -127,6 +129,8 @@ div.MUClear {
 
 .MUOuter .MURSVP {
 	font-size: 14px;
+	float: right;
+	clear: right;
 }
 
 .MUOuter .MUImage {
@@ -692,6 +696,11 @@ body h1 span.amp {
 	.header .primary ul {
 	    margin-left: -12px;
 	    -webkit-padding-start: 0px; /* removes default webkit padding on ul items */
+	}
+	
+	.main {
+		background-image: none;
+		background-color: #fff;
 	}
 }
 
