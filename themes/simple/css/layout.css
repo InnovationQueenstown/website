@@ -81,8 +81,8 @@ div.AboutItem:hover {
 
 div.MUOuter {
 	width: 100% -5px;
-	margin: 5px;
-	padding: 5px;
+	margin: 0px;
+	padding: 10px;
 	background: #ccc;
 	box-shadow: 1px 1px 1px #888;
 	transition: box-shadow 0.1s, background 0.2s;
@@ -117,10 +117,12 @@ div.MUClear {
 }
 
 .MUOuter .MULoc {
+	display: block;
 	float: left;
-	width: 100%;
+	clear: left;
 	font-size: 16px;
 	font-weight: bold;
+	bottom: 0px;
 }
 
 .MUOuter .MURSVP {
@@ -128,8 +130,8 @@ div.MUClear {
 }
 
 .MUOuter .MUImage {
-	float: right;
 	clear: right;
+	float: right;
 	border: none;
 }
 
@@ -213,8 +215,12 @@ body {
 	    min-width: 860px; /* media queries are not supported in ie7/8 without a polyfill */
 	}
 	.main {
-	    background: #fff;
-	    padding: 40px 0 60px;
+	    background-image: URL("http://wherewolf.co.nz/img/headerbg1040.jpg");
+		background-position: center center;
+		background-size: cover;
+		background-color: #08a;
+	    padding: 0px;
+		margin: 0px;
 	    min-height: 300px;
 	}
 	
@@ -222,6 +228,9 @@ body {
 	    max-width: 1100px;
 	    margin: 0 auto;
 	    padding: 0 30px;
+		padding-top: 40px;
+		padding-bottom: 60px;
+		background: #fff;
 	}
 	.ie6 .inner {
 	    width: 960px;
@@ -242,12 +251,16 @@ body {
 .header {
 	background-color: #000;
 	background-position: center;
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: -5px;
 	}
 	.header .inner {
-	    padding-top: 0px;
-		margin-bottom: -5px;
+	    padding: 0px;
+		margin-bottom: 5px;
 	    position: relative;
 	    min-height: 72px;
+		background: #000;
 	}
 
 	/* Brand */
@@ -539,6 +552,11 @@ body h1 span.amp {
     padding: 20px 0;
     font-size: 11px;
     line-height: 22px;
+}
+
+.footer .inner {
+	background: #ededed;
+	padding: 0px;
 }
 	.footer a {
 	    color: #999;
