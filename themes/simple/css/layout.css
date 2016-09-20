@@ -36,6 +36,84 @@
 * https://github.com/stubbornella/oocss/wiki/grids
 */
 
+div.AboutItem {
+	font-family: Arial, sans-serif;
+	font-size: 24px;
+	width: 33%;
+	float: left;
+	text-align: center;
+	line-height: 2em;
+	background: #fff;
+	box-shadow: none;
+}
+
+.AboutItem h2 {
+	color: #08a;
+}
+
+div.AboutItem:hover {
+	background: #eee;
+}
+
+@media screen and (max-width: 1100px) {
+    div.AboutItem {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+	div.AboutItem {
+        width: 100%;
+		line-height: 3em;
+    }
+}
+
+.AboutItem img {
+	width: 200px;
+	height: 200px;
+}
+
+div.MUOuter {
+	width: 100% -5px;
+	margin: 5px;
+	padding: 5px;
+	background: #ccc;
+	box-shadow: 1px 1px 1px #888;
+	transition: box-shadow 0.1s, background 0.2s;
+}
+
+div.MUOuter:hover {
+	background: #ddd;
+	box-shadow: 3px 3px 1px #bbb;
+}
+
+.MUOuter h2 {
+	display: inline;
+	color: #08a;
+}
+
+.MUOuter p {
+	color: black;
+	display: inline;
+	padding: 0px;
+	margin: 0px;
+	float: right;
+	
+}
+
+div.MUClear {
+	clear:both;
+}
+
+.MUOuter .MUTime {
+	font-size: 18px;
+}
+
+.MUOuter .MURSVP {
+	font-size: 14px;
+}
+
+
 .line, /* line - Groups units on one horizontal line. Note: for mobile layout units may be stacked to avoid horizontal scrolling. */
 .lastUnit {
 	overflow:hidden;
@@ -249,13 +327,16 @@ body {
 	    padding: 6px 8px;
 	    font-weight: bold;
 	    display: block;
+		text-shadow: 0px 0px 40px #bbf, 0px 0px 60px #bbf;
 	}
 	.header .primary li a:hover {
 	    color: #fff;
+		text-shadow: 0px 0px 15px white;
 	}
 	.header .primary li.section a,
 	.header .primary li.current a {
 	    color: #fff;
+		text-shadow: none;
 	}
 	.header .primary li.section:after,
 	.header .primary li.current:after {

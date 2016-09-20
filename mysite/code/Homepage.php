@@ -75,7 +75,7 @@ class Homepage_Controller extends Page_Controller {
 			$res->name = $event->name;
 			$res->time = $stamp;
 			$res->rsvp = $event->yes_rsvp_count;
-			$res->link = '<a href="'.$event->event_url.'">Go to Meetup</a>';
+			$res->link = $event->event_url;
 			$sendback->push($res);
 		 
 		}
