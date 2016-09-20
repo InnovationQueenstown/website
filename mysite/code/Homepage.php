@@ -68,7 +68,7 @@ class Homepage_Controller extends Page_Controller {
 			$meetupTime = new DateTime($meetupTime);
 			$meetupTime->add(new DateInterval('PT' . $offset . 'S'));
 			//format for display on front end
-			$stamp = $meetupTime->format('d-m-Y H:i');
+			$stamp = $meetupTime->format('D M d \a\t H:i');
 
 			//Create the dataobject from the processed event data and add it to the ArrayList which will be returned after all events are processed.
 			$res = new DataObject;
@@ -76,6 +76,7 @@ class Homepage_Controller extends Page_Controller {
 			$res->time = $stamp;
 			$res->rsvp = $event->yes_rsvp_count;
 			$res->link = $event->event_url;
+			$res->loc = $event->venue->name;
 			$sendback->push($res);
 		 
 		}

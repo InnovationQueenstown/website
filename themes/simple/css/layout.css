@@ -96,6 +96,7 @@ div.MUOuter:hover {
 .MUOuter h2 {
 	display: inline;
 	color: #08a;
+	float: left;
 }
 
 .MUOuter p {
@@ -115,8 +116,21 @@ div.MUClear {
 	font-size: 18px;
 }
 
+.MUOuter .MULoc {
+	float: left;
+	width: 100%;
+	font-size: 16px;
+	font-weight: bold;
+}
+
 .MUOuter .MURSVP {
 	font-size: 14px;
+}
+
+.MUOuter .MUImage {
+	float: right;
+	clear: right;
+	border: none;
 }
 
 
