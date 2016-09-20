@@ -43,6 +43,31 @@
 					<h2>Wherewolf</h2>
 				</div>
 			</a>
+			<div class="MUClear"></div>
+			<script src="//blockr.io/js_external/coinwidget/coin.js"></script>
+		<script>
+			CoinWidgetCom.go({
+				wallet_address: '1BSKWWmJzFfUb4GdQ8MvUtLiCZpUSH5jYa',
+				currency: 'bitcoin',
+				counter: 'hide',
+				lbl_button: 'Donate',
+				lbl_count: 'donations',
+				lbl_amount: 'BTC',
+				lbl_address: 'Use address below to donate. Thanks!',
+				qrcode: true,
+				alignment: 'bl',
+				decimals: 8,
+				size: "big",
+				color: "dark",
+				countdownFrom: "0",
+				element: "#coinwidget-bitcoin-1BSKWWmJzFfUb4GdQ8MvUtLiCZpUSH5jYa",
+				onShow: function(){},
+				onHide: function(){}
+			});
+		</script>
+		<hr>
+		<h3>Donate with Bitcoin:</h3>
+		<div class="Bitcoin" id="coinwidget-bitcoin-1BSKWWmJzFfUb4GdQ8MvUtLiCZpUSH5jYa"></div>
 	</article>
 </div>
 	
