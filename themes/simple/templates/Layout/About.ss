@@ -9,7 +9,7 @@
 			</a>
 			<a href="http://wherewolf.co.nz/">
 				<div class="AboutItem">
-					<img src="themes/simple/images/Wherewolf.jpg" alt="Wherewolf logo"/>
+					<img src="themes/simple/images/Wherewolf.png" alt="Wherewolf logo"/>
 					<h2>Wherewolf</h2>
 				</div>
 			</a>
@@ -39,7 +39,7 @@
 			</a>
 			<a href="http://www.queenstownresortcollege.com/">
 				<div class="AboutItem">
-					<img src="themes/simple/images/QRC.jpg" alt="Queenstown Resort College logo"/>
+					<img src="themes/simple/images/QRC_LowRes.jpg" alt="Queenstown Resort College logo"/>
 					<h2>QRC</h2>
 				</div>
 			</a>
