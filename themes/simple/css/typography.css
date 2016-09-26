@@ -42,7 +42,7 @@ body {
     font-size: 13px; /* This overrides the browsers default font size */
     line-height: 20px; /* If you change the font-size make sure you change the line-height value as well - the usual ratio is around 1.5 (font-size x 1.5 = line-height) */
     margin-bottom: 20px;
-    color: #333333;
+    color: #fff;
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
   body a { text-decoration: none; } /* this removes the underline from all links */
@@ -59,7 +59,7 @@ body {
     font-family: "Rubik", "CamboRegular", Georgia, "Times New Roman", Times, serif; /* This references one of the custom @font-face fonts - the other fonts that are referenced are fallbacks for browsers that don't support @fontface */
     font-weight: normal;
     margin-bottom: 10px;
-    color: #444;
+    color: #fff;
 }
 .typography h1 {
   font-size: 36px;
