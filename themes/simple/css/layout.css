@@ -48,7 +48,7 @@ div.AboutItem {
 	float: left;
 	text-align: center;
 	line-height: 2em;
-	background: #fff;
+	background: none;
 	box-shadow: none;
 }
 
@@ -57,7 +57,7 @@ div.AboutItem {
 }
 
 div.AboutItem:hover {
-	background: #eee;
+	background: #ddd;
 }
 
 @media screen and (max-width: 1100px) {
@@ -219,7 +219,7 @@ body {
 	    min-width: 860px; /* media queries are not supported in ie7/8 without a polyfill */
 	}
 	.main {
-	    background-image: URL("http://wherewolf.co.nz/img/headerbg1040.jpg");
+	    background-image: URL("../images/Backer02.jpg");
 		background-position: center center;
 		background-size: cover;
 		background-color: #08a;
@@ -234,7 +234,7 @@ body {
 	    padding: 0 30px;
 		padding-top: 40px;
 		padding-bottom: 60px;
-		background: #fff;
+		background: rgba(0,0,0,0.6);;
 	}
 	.ie6 .inner {
 	    width: 960px;
@@ -700,7 +700,7 @@ body h1 span.amp {
 	
 	.main {
 		background-image: none;
-		background-color: #fff;
+		background: #000;
 	}
 }
 
