@@ -552,18 +552,18 @@ body h1 span.amp {
 /* FOOTER */
 .footer {
     color: #999;
-    background: #ededed;
+    background: #000;
     padding: 20px 0;
     font-size: 11px;
     line-height: 22px;
 }
 
 .footer .inner {
-	background: #ededed;
+	background: #000;
 	padding: 0px;
 }
 	.footer a {
-	    color: #999;
+	    color: #aaa;
 	}
 	.footer a:hover {
 	    color: #B90000;
