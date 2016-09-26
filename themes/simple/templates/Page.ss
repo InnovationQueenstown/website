@@ -36,7 +36,7 @@ Change it, enhance it and most importantly enjoy it!
 		$Layout
 	</div>
 </div>
-<% include Footer %>
+
 
 <% require javascript('framework/thirdparty/jquery/jquery.js') %>
 <%-- Please move: Theme javascript (below) should be moved to mysite/code/page.php  --%>
