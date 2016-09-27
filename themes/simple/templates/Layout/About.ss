@@ -1,7 +1,7 @@
 <div class="content-container unit size3of4 lastUnit">
 	<article>
 		<div class="content">$Content</div>
-			<a  title="Southern Institute of Technology" href="https://www.sit.ac.nz/">
+			<a title="Southern Institute of Technology" href="https://www.sit.ac.nz/">
 				<div class="AboutItem">
 					<img src="themes/simple/images/SITSquare.png" alt="Southern Institute of Technology Logo"/>
 				</div>
