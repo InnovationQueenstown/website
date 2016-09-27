@@ -1,46 +1,39 @@
 <div class="content-container unit size3of4 lastUnit">
 	<article>
 		<div class="content">$Content</div>
-			<a href="https://www.sit.ac.nz/">
+			<a  title="Southern Institute of Technology" href="https://www.sit.ac.nz/">
 				<div class="AboutItem">
-					<img src="themes/simple/images/SITSquare.jpg" alt="Southern Institute of Technology Logo"/>
-					<h2>SIT</h2>
+					<img src="themes/simple/images/SITSquare.png" alt="Southern Institute of Technology Logo"/>
 				</div>
 			</a>
-			<a href="http://wherewolf.co.nz/">
+			<a  title="Wherewolf" href="http://wherewolf.co.nz/">
 				<div class="AboutItem">
 					<img src="themes/simple/images/Wherewolf.png" alt="Wherewolf logo"/>
-					<h2>Wherewolf</h2>
 				</div>
 			</a>
-			<a href="http://www.meetup.com/Queenstown-Technology-Group/">
+			<a  title="Queenstown Technology Group" href="http://www.meetup.com/Queenstown-Technology-Group/">
 				<div class="AboutItem">
 					<img src="themes/simple/images/QTG.jpg" alt="Queenstown Technology Group logo"/>
-					<h2>Queenstown Technology Group</h2>
 				</div>
 			</a>
-			<a href="http://www.catalystnz.org/">
+			<a  title="Catalyst Trust" href="http://www.catalystnz.org/">
 				<div class="AboutItem">
 					<img src="themes/simple/images/Catalyst.jpg" alt="Catalyst trust logo"/>
-					<h2>Catalyst</h2>
 				</div>
 			</a>
-			<a href="http://www.otago.ac.nz/">
+			<a  title="University of Otago" href="http://www.otago.ac.nz/">
 				<div class="AboutItem">
 					<img src="themes/simple/images/Otago.png" alt="Otago University logo"/>
-					<h2>Otago Uni</h2>
 				</div>
 			</a>
-			<a href="https://www.facebook.com/Queenstownyoungprofessionals/">
+			<a  title="Queenstown Young Professionals" href="https://www.facebook.com/Queenstownyoungprofessionals/">
 				<div class="AboutItem">
 					<img src="themes/simple/images/QYP.jpg" alt="Queenstown young professionals logo"/>
-					<h2>QTN Young Professionals</h2>
 				</div>
 			</a>
-			<a href="http://www.queenstownresortcollege.com/">
+			<a  title="Queenstown Resort College" href="http://www.queenstownresortcollege.com/">
 				<div class="AboutItem">
 					<img src="themes/simple/images/QRC_LowRes.jpg" alt="Queenstown Resort College logo"/>
-					<h2>QRC</h2>
 				</div>
 			</a>
 			<div class="MUClear"></div>
