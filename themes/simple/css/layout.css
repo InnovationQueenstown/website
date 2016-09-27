@@ -231,7 +231,7 @@ body {
 	    background-image: URL("../images/Backer02.jpg");
 		background-position: center center;
 		background-size: cover;
-		background-color: #08a;
+		background-color: #000;
 	    padding: 0px;
 		margin: 0px;
 	    min-height: 300px;
@@ -269,6 +269,8 @@ body {
 	margin-bottom: -5px;
 	}
 	.header .inner {
+		right: 20px;
+		max-width: 1140px;
 	    padding: 0px;
 		margin-bottom: 5px;
 	    position: relative;
@@ -702,6 +704,11 @@ body h1 span.amp {
 	    max-width: 97%;
 	    height: auto;
 	}
+	
+	.header .inner {
+		right: 0px;
+	}
+	
 	.header .primary ul {
 	    margin-left: -12px;
 	    -webkit-padding-start: 0px; /* removes default webkit padding on ul items */
